@@ -1,0 +1,8 @@
+app_name: art-expert-fastapi
+object_type: deployment
+scale_memory: 2048
+server:
+  request_serializer:
+    type: pil_numpy
+  type: fastapi
+type: flyio

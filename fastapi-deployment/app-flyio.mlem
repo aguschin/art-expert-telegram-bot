@@ -1,0 +1,9 @@
+app_name: art-expert-streamlit
+object_type: deployment
+scale_memory: 2048
+server:
+  request_serializer:
+    type: pil_numpy
+  type: streamlit
+  ui_port: 8080
+type: flyio
