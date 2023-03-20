@@ -11,7 +11,7 @@ declaration:
       type: pil_numpy
     type: fastapi
   type: flyio
-fly_toml: "# fly.toml file generated for art-expert-fastapi on 2023-03-19T16:31:28+06:00\n\
+fly_toml: "# fly.toml file generated for art-expert-fastapi on 2023-03-20T17:49:39+06:00\n\
   \napp = \"art-expert-fastapi\"\nkill_signal = \"SIGINT\"\nkill_timeout = 5\nprimary_region\
   \ = \"lax\"\nprocesses = []\n\n[env]\n\n[experimental]\n  auto_rollback = true\n\
   \n[[services]]\n  http_checks = []\n  internal_port = 8080\n  processes = [\"app\"\
@@ -24,5 +24,5 @@ fly_toml: "# fly.toml file generated for art-expert-fastapi on 2023-03-19T16:31:
 hostname: art-expert-fastapi.fly.dev
 model_hash: 6cbe5f15e38568da536a391a0e53d2b3
 model_link:
-  path: /Users/aguschin/Git/iterative/mlem/art/models/price.mlem
+  path: /Users/aguschin/Git/iterative/mlem/art/fastapi-deployment/price.mlem
 type: flyio
