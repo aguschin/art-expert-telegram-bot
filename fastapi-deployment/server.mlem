@@ -1,0 +1,5 @@
+type: fastapi
+middlewares:
+  - type: prometheus_fastapi
+    metrics:
+      - "lang_metric.http_requested_languages_total"
