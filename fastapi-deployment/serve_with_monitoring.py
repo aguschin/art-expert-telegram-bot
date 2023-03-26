@@ -6,7 +6,7 @@ from mlem.contrib.prometheus import PrometheusFastAPIMiddleware
 def main():
     model = load_meta("price")
 
-    api_middleware = PrometheusFastAPIMiddleware(metrics=["lang_metric:http_requested_languages_total"])
+    api_middleware = PrometheusFastAPIMiddleware(metrics=["lang_metric.http_requested_languages_total"])
     server = FastAPIServer(
         standardize=True,
         middlewares=Middlewares(
