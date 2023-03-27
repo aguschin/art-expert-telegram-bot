@@ -12,12 +12,15 @@ def main():
         middlewares=Middlewares(
             __root__=[api_middleware]
         ),
+        request_serializer="pil_numpy",
     )
 
     serve(
         model=model,
         server=server,
     )
+
+    server
 
 
 if __name__ == '__main__':

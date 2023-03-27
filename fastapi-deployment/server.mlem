@@ -3,3 +3,5 @@ middlewares:
   - type: prometheus_fastapi
     metrics:
       - "lang_metric.http_requested_languages_total"
+request_serializer:
+  type: pil_numpy
