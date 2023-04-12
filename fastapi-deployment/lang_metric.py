@@ -38,8 +38,8 @@ MEAN_PIXEL_VALUE = Histogram(
 )
 
 
-def image_middle_pixel_value(info: Info) -> None:
-    with info.request.form() as form:
-        im = Image.open(form.file)
-        mean_value = np.array(im).mean()
+async def image_middle_pixel_value(info: Info) -> None:
+    form = await info.request.form()
+    im = Image.open(form['file'].file)
+    mean_value = np.array(im).mean()
     MEAN_PIXEL_VALUE.observe(mean_value)

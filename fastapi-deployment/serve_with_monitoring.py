@@ -8,9 +8,9 @@ def main():
 
     api_middleware = PrometheusFastAPIMiddleware(
         metrics=[
+            "lang_metric.random_value",
             "lang_metric.http_requested_languages_total",
             "lang_metric.image_middle_pixel_value",
-            "lang_metric.random_value",
         ]
     )
     server = FastAPIServer(
