@@ -39,6 +39,10 @@ MEAN_PIXEL_VALUE = Histogram(
 
 
 async def image_middle_pixel_value(info: Info) -> None:
+    # this would have been a way to load the image
+    # and calculate some metrics, but it doesn't work
+    # (limitations of `prometheus_fastapi_instrumentator`)
+    # keeping the code piece as an example though
     form = await info.request.form()
     im = Image.open(form['file'].file)
     mean_value = np.array(im).mean()
