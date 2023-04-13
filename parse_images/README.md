@@ -14,7 +14,7 @@
 
 ### Туториалы
 https://betterprogramming.pub/i-trained-a-model-to-tell-if-you-were-naughty-this-year-11a36ca6d472
-
+https://realpython.com/python-web-scraping-practical-introduction/
 первые два сниппета про парсинг
 
 
