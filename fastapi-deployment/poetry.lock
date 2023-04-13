@@ -2360,29 +2360,25 @@ files = [
 ]
 
 [[package]]
-name = "tensorflow"
+name = "tensorflow-cpu"
 version = "2.12.0"
 description = "TensorFlow is an open source machine learning framework for everyone."
 category = "main"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "tensorflow-2.12.0-cp310-cp310-macosx_10_15_x86_64.whl", hash = "sha256:be4ac0dfcc7a16f6df2bc19bd322e312235ab3f7b0c7297f96c92c44bb14d2a1"},
-    {file = "tensorflow-2.12.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:c5193ddb3bb5120cb445279beb08ed9e74a85a4eeb2485550d6fb707a89d9a88"},
-    {file = "tensorflow-2.12.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:357d9d2851188a8d27ee195345b4d175cad970150d1344ba9d9fcc4bf2b68336"},
-    {file = "tensorflow-2.12.0-cp310-cp310-win_amd64.whl", hash = "sha256:c8001210df7202ef6267150865b0b79f834c3ca69ee3132277de8eeb994dffde"},
-    {file = "tensorflow-2.12.0-cp311-cp311-macosx_10_15_x86_64.whl", hash = "sha256:91dccda42c03569d8c787190482a11ecae3b9b173aaa9166f0ab20cecc9c31f4"},
-    {file = "tensorflow-2.12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:31f81eb8adaeb558963f5d8b47dbfcc398d898f0857bf3de6b6484350236b7b5"},
-    {file = "tensorflow-2.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:6ec4a2934ea19e92f27a9668ece43025ed5efe14b5d19be53b07692bc8a4189d"},
-    {file = "tensorflow-2.12.0-cp311-cp311-win_amd64.whl", hash = "sha256:6e7641e2a6e32f31ff233495478a9cc86b7c038140eab714a61eeddbbbb327c3"},
-    {file = "tensorflow-2.12.0-cp38-cp38-macosx_10_15_x86_64.whl", hash = "sha256:a7194e744c5a7f3e759ecb949527b4a07718a6d1110e6e82fd4ce0c5586a7d4a"},
-    {file = "tensorflow-2.12.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4afc2dd57435f29ebe249eb5f595d89b0e73be94922eeb7110aa6280a332837c"},
-    {file = "tensorflow-2.12.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:23850332f1f9f778d697c9dba63ca52be72cb73363e75ad358f07ddafef63c01"},
-    {file = "tensorflow-2.12.0-cp38-cp38-win_amd64.whl", hash = "sha256:e29fcf6cfd069aefb4b44f357cccbb4415a5a3d7b5b516eaf4450062fe40021e"},
-    {file = "tensorflow-2.12.0-cp39-cp39-macosx_10_15_x86_64.whl", hash = "sha256:42fc2635e9420faee781a16bd393126f29cd39aa2b9d02901f24d8497bd6f958"},
-    {file = "tensorflow-2.12.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:76414355e420edb9154b4e72113eef5813ccb71701fda959afbbc1eebe3099bd"},
-    {file = "tensorflow-2.12.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:020d6a54cb26020bdc71a7bae8ee35be05096f63e773dc517f6e87c49de62c50"},
-    {file = "tensorflow-2.12.0-cp39-cp39-win_amd64.whl", hash = "sha256:9f70a8f9ab46e5ed436850aa60d1cd40645f5c669e14bcad48915dc1f597dda2"},
+    {file = "tensorflow_cpu-2.12.0-cp310-cp310-macosx_10_15_x86_64.whl", hash = "sha256:734ce850e2b3493041bdc071b594f0f78d35e4bfce5a7e0a98d449b20420e01d"},
+    {file = "tensorflow_cpu-2.12.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:361b19b5a64bf611beccd22de1fc04f614a8c157ac99893d9702ed24932018d6"},
+    {file = "tensorflow_cpu-2.12.0-cp310-cp310-win_amd64.whl", hash = "sha256:d5ad746bf8c87d9a9fcea4698828ba1d101a7f7bfd323a2571130374a192578b"},
+    {file = "tensorflow_cpu-2.12.0-cp311-cp311-macosx_10_15_x86_64.whl", hash = "sha256:b9c8f0d0658da8a5b25a4fe5ca315f86c449eb11e30d79cea49c7658be75a825"},
+    {file = "tensorflow_cpu-2.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e8c7047552a2d759f3e65ac13e36dd24bb5fec2e6576e848287811ec44b3d62f"},
+    {file = "tensorflow_cpu-2.12.0-cp311-cp311-win_amd64.whl", hash = "sha256:8fdb636736f95094368bc7d26bb3b8ed93ba820cc5d95f847e00bf4a7645463d"},
+    {file = "tensorflow_cpu-2.12.0-cp38-cp38-macosx_10_15_x86_64.whl", hash = "sha256:5beeb99d2a1cc1383ca981513c35a4a18157e52d91a89e69c94cb7b7e411f0d8"},
+    {file = "tensorflow_cpu-2.12.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a406f751180fe5282776e8bc84f39a2dc2b796c3ae35fbe20e4edc86ec580dd3"},
+    {file = "tensorflow_cpu-2.12.0-cp38-cp38-win_amd64.whl", hash = "sha256:b6ba926f9a56cdf0657defc6d046735e31ded383054f67c1a16ef2b0511f68d7"},
+    {file = "tensorflow_cpu-2.12.0-cp39-cp39-macosx_10_15_x86_64.whl", hash = "sha256:ef4f142b6fe75fcc71ada6331ed2a15ed61b7034187049d0ef1dac482d52db78"},
+    {file = "tensorflow_cpu-2.12.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:55685b9a19c8ecb2587fb53914c045b188ed0289a2c6495e4e59d5fb082da9cc"},
+    {file = "tensorflow_cpu-2.12.0-cp39-cp39-win_amd64.whl", hash = "sha256:374b15d1cec1a62006e388062e89dd4899a121272d41ea5d3fcbcc96e2d875c9"},
 ]
 
 [package.dependencies]
@@ -2911,4 +2907,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.11"
-content-hash = "1c05568f4e2879d022e3002ebaf63c0a50db128a0f1b1f39f5dae12c66f67601"
+content-hash = "55f068ed0db670e2486f598c5178b6d31b94206e382666d00a7d19a821b9b93f"
