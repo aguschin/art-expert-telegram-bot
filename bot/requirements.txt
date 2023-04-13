@@ -5,3 +5,4 @@ keras_preprocessing
 pillow
 coolname
 mlem
+bs4
