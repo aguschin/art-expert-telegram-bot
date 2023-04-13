@@ -19,7 +19,7 @@ def main():
             __root__=[api_middleware]
         ),
         request_serializer="pil_numpy",
-        port=8082
+        port=8080
     )
 
     serve(
