@@ -1,5 +1,7 @@
-export FLYIO_APP_NAME="art-expert-chat-art-platform-duplicate"
-export FLYIO_ORG_NAME="cap_ds_bootcamp_2023"
+#!/usr/bin/env bash
+set -ex
+
+pip install "mlem[streamlit,flyio]"
 
 mlem build docker_dir \
     -m price \
