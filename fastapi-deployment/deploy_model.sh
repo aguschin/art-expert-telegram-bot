@@ -5,6 +5,9 @@ python -m venv .venv
 source .venv/bin/activate
 pip install "mlem[streamlit,flyio]"
 
+python --version
+pip show numpy
+
 mlem build docker_dir \
     -m price \
     --target dockerdir \
