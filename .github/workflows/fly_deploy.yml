@@ -1,5 +1,7 @@
 name: Fly Deploy
+
 on: workflow_dispatch
+
 jobs:
   deploy:
     name: Deploy model app
