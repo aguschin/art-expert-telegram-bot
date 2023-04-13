@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -ex
 
+python -m venv .venv
+source .venv/bin/activate
 pip install "mlem[streamlit,flyio]"
 
 mlem build docker_dir \
