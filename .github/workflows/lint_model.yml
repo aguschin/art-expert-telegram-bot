@@ -5,9 +5,6 @@ on: push
 
 jobs:
   build:
-    strategy:
-      matrix:
-        module: ["fastapi-deployment"]
 
     runs-on: ubuntu-latest
 
@@ -22,21 +19,18 @@ jobs:
         name: Build and export
         uses: docker/build-push-action@v4
         with:
-          working-directory: ./${{ matrix.module }}
+          working-directory: ./fastapi-deployment
           context: .
-          tags: ${{ matrix.module }}:latest
-          outputs: type=docker,dest=/tmp/${{ matrix.module }}.tar
+          tags: fastapi-deployment:latest
+          outputs: type=docker,dest=/tmp/fastapi-deployment.tar
       -
         name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ matrix.module }}
-          path: /tmp/${{ matrix.module }}.tar
+          name: fastapi-deployment
+          path: /tmp/fastapi-deployment.tar
 
   use:
-    strategy:
-      matrix:
-        module: ["fastapi-deployment"]
 
     runs-on: ubuntu-latest
 
@@ -50,10 +44,10 @@ jobs:
         name: Download artifact
         uses: actions/download-artifact@v3
         with:
-          name: ${{ matrix.module }}
+          name: fastapi-deployment
           path: /tmp
       -
         name: Load image
         run: |
-          docker load --input /tmp/${{ matrix.module }}.tar
+          docker load --input /tmp/fastapi-deployment.tar
           docker image ls -a
