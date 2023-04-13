@@ -19,8 +19,7 @@ jobs:
         name: Build and export
         uses: docker/build-push-action@v4
         with:
-          working-directory: ./fastapi-deployment
-          context: .
+          context: ./fastapi-deployment
           tags: fastapi-deployment:latest
           outputs: type=docker,dest=/tmp/fastapi-deployment.tar
       -
