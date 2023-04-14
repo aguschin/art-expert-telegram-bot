@@ -1,6 +1,5 @@
 import numpy as np
-from PIL import Image
-from prometheus_client import Counter, Gauge, Histogram
+from prometheus_client import Counter, Gauge
 from prometheus_fastapi_instrumentator.metrics import Info
 
 RANDOM_VALUE = Gauge(
@@ -27,21 +26,3 @@ def http_requested_languages_total(info: Info) -> None:
         langs.add(element)
     for language in langs:
         METRIC_EXAMPLE.labels(language).inc()
-
-
-MEAN_PIXEL_VALUE = Histogram(
-    "image_middle_pixel_value",
-    "Mean pixel value of the image",
-    buckets=(0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275),
-)
-
-
-async def image_middle_pixel_value(info: Info) -> None:
-    # this would have been a way to load the image
-    # and calculate some metrics, but it doesn't work
-    # (limitations of `prometheus_fastapi_instrumentator`)
-    # keeping the code piece as an example though
-    form = await info.request.form()
-    im = Image.open(form["file"].file)
-    mean_value = np.array(im).mean()
-    MEAN_PIXEL_VALUE.observe(mean_value)
