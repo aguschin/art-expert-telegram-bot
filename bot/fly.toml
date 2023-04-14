@@ -1,6 +1,6 @@
-# fly.toml file generated for artefacts-bot on 2023-04-14T10:53:33+04:00
+# fly.toml file generated for artefacts-bot-chat-art-platform on 2023-04-14T10:59:10+04:00
 
-app = "artefacts-bot"
+app = "artefacts-bot-chat-art-platform"
 kill_signal = "SIGINT"
 kill_timeout = 5
 primary_region = "ams"
