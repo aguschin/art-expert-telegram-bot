@@ -13,10 +13,13 @@
 - https://bidtoart.com.
 
 ### Туториалы
-https://betterprogramming.pub/i-trained-a-model-to-tell-if-you-were-naughty-this-year-11a36ca6d472
-https://realpython.com/python-web-scraping-practical-introduction/
-первые два сниппета про парсинг
+* https://betterprogramming.pub/i-trained-a-model-to-tell-if-you-were-naughty-this-year-11a36ca6d472 (первые два сниппета про парсинг)
+* https://realpython.com/python-web-scraping-practical-introduction/
 
+### Источники
+* Artsy: около 3000 картин. Есть данные по автору, названию, году и диапазону экспертной оценки стоимости.
+* BidToArt: около 11000 аукционных предметов с наиболее свежих аукционов Phillips, Bonhams, Heritage Auctions и др. 
+Есть данные по автору, названию, категории (Paintings / Prints & Graphic Art / Works on paper), дате аукциона и диапазону экспертной оценки стоимости.
 
 ## Ссылки на найденные датасеты
 Форум с примерами датасетов
