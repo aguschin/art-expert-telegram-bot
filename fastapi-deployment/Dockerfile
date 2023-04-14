@@ -1,4 +1,4 @@
-FROM python:3.10.8-slim
+FROM python:3.9.16-slim
 
 WORKDIR /app
 
@@ -11,4 +11,4 @@ RUN set -ex \
 
 COPY . .
 
-CMD ["poetry", "run", "python", "run_bot.py"]
+CMD ["poetry", "run", "python", "serve_with_monitoring.py"]

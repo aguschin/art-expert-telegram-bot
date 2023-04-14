@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "fastapi-deployment"
+version = "0.1.0"
+description = ""
+authors = ["Pavel Ignatovich <p.ignatovich97@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+mlem = {version = "==0.4.12", extras = ["streamlit", "flyio"]}
+tensorflow-cpu = "==2.12.0"
+keras = "==2.12.0"
+prometheus-fastapi-instrumentator = "^6.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.17.2"
+mypy = "^1.2.0"
+black = "^23.3.0"
+isort = "^5.12.0"
+pybetter = "^0.4.1"
+autoflake8 = "^0.4.0"
+docformatter = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,12 +1,9 @@
-# fly.toml file generated for artefacts-bot-chat-art-platform on 2023-04-14T10:59:10+04:00
+# fly.toml file generated for art-expert-chat-art-platform on 2023-04-13T18:11:21+04:00
 
-app = "artefacts-bot-chat-art-platform"
+app = "art-expert-chat-art-platform"
 kill_signal = "SIGINT"
 kill_timeout = 5
 primary_region = "ams"
-
-[env]
-  MODEL_API_URL = "https://art-expert-chat-art-platform.fly.dev"
 
 [[services]]
   protocol = "tcp"

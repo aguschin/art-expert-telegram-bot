@@ -15,11 +15,9 @@ def main():
     )
     server = FastAPIServer(
         standardize=True,
-        middlewares=Middlewares(
-            __root__=[api_middleware]
-        ),
+        middlewares=Middlewares(__root__=[api_middleware]),
         request_serializer="pil_numpy",
-        port=8082
+        port=8080,
     )
 
     serve(
@@ -28,5 +26,5 @@ def main():
     )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
