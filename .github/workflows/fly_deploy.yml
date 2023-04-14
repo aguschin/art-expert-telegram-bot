@@ -1,6 +1,6 @@
 name: Fly Deploy
 
-on: workflow_dispatch
+on: push
 
 jobs:
   deploy-model-app:
