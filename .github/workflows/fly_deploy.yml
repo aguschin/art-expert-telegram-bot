@@ -3,17 +3,17 @@ name: Fly Deploy
 on: push
 
 jobs:
-  deploy-model-app:
-    name: Deploy model app
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: superfly/flyctl-actions/setup-flyctl@master
-      - name: deploy model app
-        working-directory: ./fastapi-deployment
-        run: flyctl deploy
-        env:
-          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+  # deploy-model-app:
+  #   name: Deploy model app
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - uses: superfly/flyctl-actions/setup-flyctl@master
+  #     - name: deploy
+  #       working-directory: ./fastapi-deployment
+  #       run: flyctl deploy
+  #       env:
+  #         FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
   
   deploy-tg-bot:
     name: Deploy telegram bot
@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: superfly/flyctl-actions/setup-flyctl@master
-      - name: deploy model app
+      - name: deploy
         working-directory: ./bot
         run: flyctl deploy
         env:
