@@ -1,9 +1,12 @@
-# fly.toml file generated for art-e-facts-bot on 2023-04-13T18:16:04+04:00
+# fly.toml file generated for art-e-facts-bot on 2023-04-14T10:47:36+04:00
 
 app = "art-e-facts-bot"
 kill_signal = "SIGINT"
 kill_timeout = 5
 primary_region = "ams"
+
+[env]
+  MODEL_API_URL = "https://art-expert-chat-art-platform.fly.dev"
 
 [[services]]
   protocol = "tcp"
@@ -18,11 +21,7 @@ primary_region = "ams"
   [[services.ports]]
     port = 443
     handlers = ["tls", "http"]
-
   [services.concurrency]
     type = "connections"
     hard_limit = 25
     soft_limit = 20
-
-[env]
-  MODEL_API_URL = "https://art-expert-chat-art-platform.fly.dev"
