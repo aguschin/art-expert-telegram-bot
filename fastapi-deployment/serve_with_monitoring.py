@@ -4,7 +4,7 @@ from mlem.contrib.prometheus import PrometheusFastAPIMiddleware
 
 
 def main():
-    model = load_meta("price")
+    model = load_meta("models/orig_dataset/mlem_orig_dataset")
 
     api_middleware = PrometheusFastAPIMiddleware(
         metrics=[
@@ -16,7 +16,6 @@ def main():
     server = FastAPIServer(
         standardize=True,
         middlewares=Middlewares(__root__=[api_middleware]),
-        request_serializer="pil_numpy",
         port=8080,
     )
 
