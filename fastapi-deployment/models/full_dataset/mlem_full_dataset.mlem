@@ -1,32 +1,32 @@
 artifacts:
-  903cdb8d-8adb-4d09-9890-fca401b68a39.io:
+  439c902a-1f22-4b8e-bf68-4999a899851c.io:
     hash: 3f3278380b6f7dbfeafab7559ac2776c
     size: 31
-    uri: mlem_full_dataset/903cdb8d-8adb-4d09-9890-fca401b68a39.io
-  903cdb8d-8adb-4d09-9890-fca401b68a39_data:
+    uri: mlem_full_dataset/439c902a-1f22-4b8e-bf68-4999a899851c.io
+  439c902a-1f22-4b8e-bf68-4999a899851c_data:
     hash: 859dcfba30e009490e7dba541c5a6698
     size: 1071
-    uri: mlem_full_dataset/903cdb8d-8adb-4d09-9890-fca401b68a39
-  cc7ca862-5dff-478b-a003-629ac9a34e3f.io:
+    uri: mlem_full_dataset/439c902a-1f22-4b8e-bf68-4999a899851c
+  a3f30701-01cc-4580-85a4-52104285827c.io:
     hash: 3f3278380b6f7dbfeafab7559ac2776c
     size: 31
-    uri: mlem_full_dataset/cc7ca862-5dff-478b-a003-629ac9a34e3f.io
-  cc7ca862-5dff-478b-a003-629ac9a34e3f_data:
-    hash: 8433960128dc04f704e9be87259b9828
+    uri: mlem_full_dataset/a3f30701-01cc-4580-85a4-52104285827c.io
+  a3f30701-01cc-4580-85a4-52104285827c_data:
+    hash: 859dcfba30e009490e7dba541c5a6698
+    size: 1071
+    uri: mlem_full_dataset/a3f30701-01cc-4580-85a4-52104285827c
+  b1a7a795-73cd-4fc0-8dae-339fd1b055a8.io:
+    hash: 3f3278380b6f7dbfeafab7559ac2776c
+    size: 31
+    uri: mlem_full_dataset/b1a7a795-73cd-4fc0-8dae-339fd1b055a8.io
+  b1a7a795-73cd-4fc0-8dae-339fd1b055a8_data:
+    hash: 1ace21904a635b0286ac9ea9d41509e0
     size: 43399493
-    uri: mlem_full_dataset/cc7ca862-5dff-478b-a003-629ac9a34e3f
+    uri: mlem_full_dataset/b1a7a795-73cd-4fc0-8dae-339fd1b055a8
   data.pkl:
-    hash: cc2fabc7711225a19fe22e28f3f5a29e
+    hash: ecab9893f91b7120117f7176b1e770a8
     size: 1389
     uri: mlem_full_dataset/data.pkl
-  dc109a22-d6db-4fa3-b2a8-8a7c78ff7dce.io:
-    hash: 3f3278380b6f7dbfeafab7559ac2776c
-    size: 31
-    uri: mlem_full_dataset/dc109a22-d6db-4fa3-b2a8-8a7c78ff7dce.io
-  dc109a22-d6db-4fa3-b2a8-8a7c78ff7dce_data:
-    hash: 859dcfba30e009490e7dba541c5a6698
-    size: 1071
-    uri: mlem_full_dataset/dc109a22-d6db-4fa3-b2a8-8a7c78ff7dce
 call_orders:
   __call__:
   - - model
