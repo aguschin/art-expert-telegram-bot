@@ -4,13 +4,44 @@
             "path": ".github"
         },
         {
-            "path": ".vscode"
-        },
-        {
             "path": "bot"
         },
         {
             "path": "fastapi-deployment"
         }
-    ]
+    ],
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Python: Current File",
+                "type": "python",
+                "request": "launch",
+                "program": "${file}",
+                "console": "integratedTerminal",
+                "justMyCode": true
+            },
+            {
+                "name": "Serve model with fastAPI",
+                "type": "python",
+                "pythonPath": "${workspaceFolder:fastapi-deployment}/.venv/bin/python",
+                "request": "launch",
+                "program": "serve_with_monitoring.py",
+                "console": "integratedTerminal",
+                "justMyCode": true,
+                "cwd": "${workspaceFolder:fastapi-deployment}"
+            },
+            {
+                "name": "Telegram bot",
+                "type": "python",
+                "pythonPath": "${workspaceFolder:bot}/.venv/bin/python",
+                "request": "launch",
+                "program": "run_bot.py",
+                "console": "integratedTerminal",
+                "justMyCode": true,
+                "cwd": "${workspaceFolder:bot}"
+            }
+        ],
+        "compounds": []
+    }
 }
