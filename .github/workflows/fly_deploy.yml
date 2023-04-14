@@ -13,7 +13,7 @@ jobs:
   #       working-directory: ./fastapi-deployment
   #       run: flyctl deploy
   #       env:
-  #         FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+  #         FLY_API_TOKEN: ${{ secrets.MODEL_FLY_DEPLOY_TOKEN }}
   
   deploy-tg-bot:
     name: Deploy telegram bot
@@ -25,4 +25,4 @@ jobs:
         working-directory: ./bot
         run: flyctl deploy
         env:
-          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+          FLY_API_TOKEN: ${{ secrets.TELEGRAM_BOT_FLY_DEPLOY_TOKEN }}
