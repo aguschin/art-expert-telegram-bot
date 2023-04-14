@@ -4,7 +4,7 @@ from mlem.contrib.prometheus import PrometheusFastAPIMiddleware
 
 
 def main():
-    model = load_meta("models/orig_dataset/mlem_orig_dataset")
+    model = load_meta("models/full_dataset/mlem_full_dataset")
 
     api_middleware = PrometheusFastAPIMiddleware(
         metrics=[
