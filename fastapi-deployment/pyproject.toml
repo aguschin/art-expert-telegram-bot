@@ -9,8 +9,8 @@ readme = "README.md"
 python = ">=3.9,<3.11"
 mlem = {version = "==0.4.12", extras = ["streamlit", "flyio"]}
 pillow = "==9.4.0"
-torchvision = "==0.14.1"
-torch = "==1.13.1"
+torchvision = {version = "==0.14.1", source = "pytorch-cpu"}
+torch = {version = "==1.13.1", source = "pytorch-cpu"}
 prometheus-fastapi-instrumentator = "^6.0.0"
 
 [tool.poetry.group.dev.dependencies]
@@ -21,6 +21,13 @@ isort = "^5.12.0"
 pybetter = "^0.4.1"
 autoflake8 = "^0.4.0"
 docformatter = "^1.6.0"
+
+
+[[tool.poetry.source]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+default = false
+secondary = true
 
 [build-system]
 requires = ["poetry-core"]
