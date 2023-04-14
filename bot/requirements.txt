@@ -1,7 +1,0 @@
-python-telegram-bot
-numpy
-keras
-keras_preprocessing
-pillow
-coolname
-mlem
