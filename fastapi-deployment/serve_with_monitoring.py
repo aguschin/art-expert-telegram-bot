@@ -4,22 +4,18 @@ from mlem.contrib.prometheus import PrometheusFastAPIMiddleware
 
 
 def main():
-    model = load_meta("price")
+    model = load_meta("models/full_dataset/mlem_full_dataset")
 
     api_middleware = PrometheusFastAPIMiddleware(
         metrics=[
             "lang_metric.random_value",
             "lang_metric.http_requested_languages_total",
-            "lang_metric.image_middle_pixel_value",
         ]
     )
     server = FastAPIServer(
         standardize=True,
-        middlewares=Middlewares(
-            __root__=[api_middleware]
-        ),
-        request_serializer="pil_numpy",
-        port=8082
+        middlewares=Middlewares(__root__=[api_middleware]),
+        port=8080,
     )
 
     serve(
@@ -28,5 +24,5 @@ def main():
     )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

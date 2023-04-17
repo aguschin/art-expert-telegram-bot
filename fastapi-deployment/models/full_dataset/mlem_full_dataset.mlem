@@ -1,0 +1,62 @@
+artifacts:
+  439c902a-1f22-4b8e-bf68-4999a899851c.io:
+    hash: 3f3278380b6f7dbfeafab7559ac2776c
+    size: 31
+    uri: mlem_full_dataset/439c902a-1f22-4b8e-bf68-4999a899851c.io
+  439c902a-1f22-4b8e-bf68-4999a899851c_data:
+    hash: 859dcfba30e009490e7dba541c5a6698
+    size: 1071
+    uri: mlem_full_dataset/439c902a-1f22-4b8e-bf68-4999a899851c
+  a3f30701-01cc-4580-85a4-52104285827c.io:
+    hash: 3f3278380b6f7dbfeafab7559ac2776c
+    size: 31
+    uri: mlem_full_dataset/a3f30701-01cc-4580-85a4-52104285827c.io
+  a3f30701-01cc-4580-85a4-52104285827c_data:
+    hash: 859dcfba30e009490e7dba541c5a6698
+    size: 1071
+    uri: mlem_full_dataset/a3f30701-01cc-4580-85a4-52104285827c
+  b1a7a795-73cd-4fc0-8dae-339fd1b055a8.io:
+    hash: 3f3278380b6f7dbfeafab7559ac2776c
+    size: 31
+    uri: mlem_full_dataset/b1a7a795-73cd-4fc0-8dae-339fd1b055a8.io
+  b1a7a795-73cd-4fc0-8dae-339fd1b055a8_data:
+    hash: 1ace21904a635b0286ac9ea9d41509e0
+    size: 43399493
+    uri: mlem_full_dataset/b1a7a795-73cd-4fc0-8dae-339fd1b055a8
+  data.pkl:
+    hash: ecab9893f91b7120117f7176b1e770a8
+    size: 1389
+    uri: mlem_full_dataset/data.pkl
+call_orders:
+  __call__:
+  - - model
+    - __call__
+object_type: model
+processors:
+  model:
+    io:
+      type: pickle
+    methods:
+      __call__:
+        args:
+        - name: img_bytes
+          type_:
+            type: binary
+        name: __call__
+        returns:
+          item_types:
+            price:
+              ptype: float
+              type: primitive
+          type: dict
+    type: callable
+requirements:
+- extra_index: https://download.pytorch.org/whl/cpu
+  module: torch
+  version: 1.13.0
+- module: PIL
+  package_name: Pillow
+  version: 9.4.0
+- extra_index: https://download.pytorch.org/whl/cpu
+  module: torchvision
+  version: 0.14.0

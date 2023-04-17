@@ -1,9 +1,14 @@
-FROM python:3.9.5-slim
+FROM python:3.10.8-slim
+
 WORKDIR /app
 
+RUN pip install poetry
 
-COPY requirements.txt .
-RUN pip install -r requirements.txt && pip cache purge
-COPY . ./
-CMD python bot.py
+COPY pyproject.toml poetry.lock ./
 
+RUN set -ex \
+    & poetry install --no-dev
+
+COPY . .
+
+CMD ["poetry", "run", "python", "run_bot.py"]

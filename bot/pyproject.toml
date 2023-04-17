@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "bot"
+version = "0.1.0"
+description = ""
+authors = ["Pavel Ignatovich <p.ignatovich97@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-telegram-bot="^20.2"
+pydantic = {version = "^1.10.7", extras = ["dotenv"]}
+coolname = "^2.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.17.2"
+mypy = "^1.2.0"
+black = "^23.3.0"
+isort = "^5.12.0"
+pybetter = "^0.4.1"
+autoflake8 = "^0.4.0"
+docformatter = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
