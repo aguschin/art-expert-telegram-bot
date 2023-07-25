@@ -1,11 +1,15 @@
-# art-expert-telegram-bot
+To deploy:
 
-Deploy something like https://t.me/AIArtExpertBot
+1. set telegram token
 
-- `bot/` folder: telegram bot (run locally or deploy to fly.io)
-- `fastapi-deployment/` folder: fastapi and streamlit app to deploy to flyio
+```sh
+$ flyctl secrets set TELEGRAM_TOKEN=tokenvalue
+```
 
-Read more about tools used:
-- https://mlem.ai
-- A simple solution for monitoring ML systems (FastAPI + Prometheus + Grafana) https://www.jeremyjordan.me/ml-monitoring/
-- Python Telegram Bot https://python-telegram-bot.org
+2. change appname in fly.toml to your app name (will be created automatically)
+
+3. deploy
+
+```sh
+$ flyctl deploy
+```
